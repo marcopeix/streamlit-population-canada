@@ -6,6 +6,8 @@ import json
 import plotly.express as px
 import matplotlib.pyplot as plt
 
+st.set_page_config('Homepage', page_icon="🏡")
+
 st.title('Quarterly Population Estimates in Canada')
 st.subheader('From Q3 1991 to Q1 2023')
 st.markdown("Source table can be found [here](https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=1710000901)")
@@ -40,6 +42,8 @@ def read_geojson():
     return geo
 
 df, geo_df = read_data()
+if df not in st.session_state:
+    st.session_state['df'] = df
 geo = read_geojson()
 st.write(df)
 
