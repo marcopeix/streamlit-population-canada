@@ -144,3 +144,14 @@ if forecast_btn:
         plt.text(x=index, y=value + 0.015, s=str(round(value,2)), ha='center')
 
     tab2.pyplot(eval_fig)
+
+expander = st.expander("How does it work 🤓")
+expander.write("""
+After specifying the target and horizon, three models are tested: an autoregressive model, double exponential smoothing, and the Theta model.
+
+Each model is tested on a hold-out set of 32 timesteps to evaluate their performance in predicting on the set horizon for the specified target. The evaluation is done using the sMAPE.
+
+Then, the best model is the one that achieves the lowest sMAPE. 
+
+That model is automatically selected to generate the predictions.
+""")
