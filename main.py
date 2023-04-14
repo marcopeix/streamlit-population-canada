@@ -8,6 +8,10 @@ import matplotlib.pyplot as plt
 
 st.set_page_config('Homepage', page_icon="🏡")
 
+with st.sidebar:
+    st.markdown("# Hello 👋")
+    st.markdown("## Welcome to this app on visualizing and forecasting the quarterly population in Canada. Of course, real-life data is used. Have fun 🎉!")
+
 st.title('Quarterly Population Estimates in Canada')
 st.subheader('From Q3 1991 to Q1 2023')
 st.markdown("Source table can be found [here](https://www150.statcan.gc.ca/t1/tbl1/en/cv.action?pid=1710000901)")
