@@ -20,4 +20,3 @@ scipy==1.10.1
 setuptools==65.6.3
 six==1.16.0
 statsmodels==0.13.5
-streamlit==1.20.0
