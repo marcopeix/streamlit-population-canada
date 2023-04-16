@@ -9,7 +9,6 @@ jsonschema==4.17.3
 matplotlib==3.7.1
 numexpr==2.8.4
 numpy==1.23.5
-numpy-base==1.23.5
 openssl==1.1.1t
 pandas==1.5.3
 pip==23.0.1
