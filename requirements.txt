@@ -1,7 +1,6 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: win-64
-abseil-cpp==20211102.0
 altair==4.2.2
 appdirs==1.4.4
 arrow-cpp==10.0.1
